@@ -1,4 +1,6 @@
 source("cachematrix.R")
+
+##test function
 test <-function(){
   Matrix <- matrix(c(  3,  2,  6, 1,  1,  3, -3, -2, -5), nrow = 3, ncol = 3, byrow = TRUE)
   inverseMatrix <- matrix(c( 1, -2,  0, -4,  3, -3,  1,  0,  1), nrow = 3, ncol = 3, byrow = TRUE)
@@ -19,4 +21,5 @@ test <-function(){
   print(inverseMatrix2)
   identical(inverseMatrix1,inverseMatrix2)
 }
+## run test
 test()
